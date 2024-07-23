@@ -12,9 +12,11 @@
     <?php include "../components/navWebCours.php"; ?>
   </header>
 
-  <section class="h-screen my-8 bloc flex-col items-start justify-start">
-    <div class="w-full h-auto ">
-        <p class="mt-64"><?php echo $_GET['nma']; ?></p> 
+  <section class="h-screen bloc flex-col items-center justify-center">
+    <div class="container">
+        <p>
+            <?php echo $_GET['nma'] ?>
+        </p>
     </div>
   </section>
 
