@@ -12,9 +12,9 @@
     <?php include "components/nav.php"; ?>
   </header>
 
-  <section class="h-screen flex items-center justify-center pt-20 max-xl:block">
+  <section class="h-screen flex items-start justify-start pt-20 max-xl:block">
     <div class="my-5 px-2 w-full">
-      <div class="w-full mx-1 my-12 md:mx-32 md:my-24">
+      <div class="mx-1 md:mx-32 md:my-32">
         <h2 class="font-bold text-3xl">Cours en libre accès</h2>
       </div>
       <div class="w-full">
