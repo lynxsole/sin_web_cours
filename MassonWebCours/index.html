@@ -15,7 +15,7 @@
         <span class="font-semibold">Asso Croizat</span>
       </a>
       <div>
-        <ul class="w-full h-auto flex font-semibold">
+        <ul class="w-full h-auto flex font-semibold max-xl:hidden">
           <li class="cursor-pointer mx-4"><a href="courses.php">Cours</a></li>
           <li class="cursor-pointer mx-4">Contact</li>
           <li class="cursor-pointer mx-4">A Propos</li>
@@ -24,10 +24,10 @@
     </div>
   </nav>
 
-  <section class="h-screen flex items-center justify-center pt-20">
-    <div class="w-full md:w-1/2 flex flex-col items-start justify-center px-8 md:px-12">
-      <h2 class="font-semibold text-3xl text-justify">
-        Make Your <span class="text-blue-600 border-b-2 border-blue-600">Future With Us</span>
+  <section class="h-screen flex items-center justify-center pt-20 max-xl:block">
+    <div class="w-full md:w-1/2 flex flex-col items-start justify-center px-8">
+      <h2 class="font-semibold text-3xl text-justify md:font-sm">
+        Make Your <span class="text-blue-600 border-b-2 border-blue-600 ">Future With Us</span>
       </h2>
       <div class="w-full md:w-3/4 mt-8">
         <p>
@@ -49,13 +49,15 @@
       </div>
     </div>
 
-    <div class="w-full md:w-1/2 flex justify-center items-center overflow-x-hidden">
+    <div class="w-full md:w-1/2 flex justify-center items-center overflow-x-hidden max-xl:hidden">
       <img class="object-cover rounded-full mx-6 w-48 h-48" src="public/Asso_Croizat_rocket.png" alt="Rocket">
       <img class="object-cover rounded-full mx-6 w-48 h-48" src="public/Asso_Croizat_book.png" alt="Book">
       <img class="object-cover rounded-full mx-6 w-48 h-48" src="public/Asso_Croizat_success.png" alt="Success">
     </div>
   </section>
 
+  
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/tailspin.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
