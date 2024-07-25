@@ -13,9 +13,9 @@
   </header>
 
   <section class="h-screen flex items-start justify-start pt-20 max-xl:block">
-    <div class="my-5 px-2 w-full">
-      <div class="mx-1 md:mx-32 md:my-32">
-        <h2 class="font-bold text-3xl">Cours en libre accès</h2>
+    <div class="py-5 px-2 w-full">
+      <div class="mx-16 my-32 md:mx-32 md:my-32 ">
+        <h2 class="font-bold text-3xl max-xl:text-base">Cours en libre accès</h2>
       </div>
       <div class="w-full">
         <?php include "components/courses_block.php"; ?>

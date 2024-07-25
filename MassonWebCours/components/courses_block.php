@@ -20,13 +20,13 @@
 
     foreach($push as $push) { 
         ?>
-        <a href="page/webCours.php?nma=<?php echo htmlspecialchars($push['article_name']); ?>&article_id=<?php echo htmlspecialchars($push['article_id']); ?>">
+        <a href="page/webCours.php?nma=<?php echo htmlspecialchars($push['article_name']); ?>&article_id=<?php echo htmlspecialchars($push['article_id']); ?>?categories=<?php echo htmlspecialchars($push['categories_section']); ?>">
             <div class="w-[90%] h-auto mx-auto relative my-6 border shadow-sm hover:shadow-lg cursor-pointer transition-all flex rounded-sm bottom-10">
                 <div class="w-[20%] h-auto max-xl:hidden">
                     <img src="public/Asso_Croizat_book.png" class="object-cover w-auto h-32 mx-auto my-8 items-cente justify-center" alt="">
                 </div>
                 <div class="block px-2 py-1">
-
+                                                                    <!-- couleur de la categories -->
                     <div style="color: <?php echo htmlspecialchars($push['categories_color']); ?>" class="categories_font_color font-semibold py-2"><?php echo htmlspecialchars($push['categories_section']); ?></div>
 
                     <div class="font-bold py-1"><?php echo htmlspecialchars($push['article_name']); ?></div>
@@ -43,7 +43,7 @@
                             <div class="mx-2">
                                 <img src="public/Asso_Croizat_clock.png" class="w-5" alt="">
                             </div>
-                            <span><?php echo htmlspecialchars($push['article_time']); ?> Min</span>
+                            <span><?php echo htmlspecialchars($push['article_time']); ?></span>
                         </div>
                         
                     </div>

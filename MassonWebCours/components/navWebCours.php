@@ -1,5 +1,5 @@
 <?php 
-    // session_start();
+    session_start();
 ?>
 
 
@@ -11,7 +11,6 @@
     </a>
     <div class="max-xl:hidden">
       <ul class="w-full h-auto flex font-semibold">
-        <a href="../courses.php"><li class="cursor-pointer mx-4">Cours</li></a>
         <li class="cursor-pointer mx-4">Contact</li>
         <li class="cursor-pointer mx-4">A Propos</li>
       </ul>
