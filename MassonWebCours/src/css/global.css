@@ -1,0 +1,64 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+:root {
+  --bg-dark: #36393e;
+  --bg-object: #292a2c;
+  --bg-mainObject: #282b30;
+  --codeSpace: #424549;
+  --codeSpaceText: #b4c468;
+  --codeSpaceSlection: #f6f4fd;
+  --ProgressBare: #b4c468;
+  --text-default-color: #f6f4fd;
+  --bg-btn: #45474b;
+  --bg-hover: #48494b;
+  --info-bubble: #e6f4fa;
+  --sm-transition: 0.3s ease-in;
+}
+
+.info {
+  cursor: text;
+  height: 8px;
+  width: auto;
+  margin: 5px 10px;
+  padding: 2.5px 16px;
+  border-radius: 3px 3px;
+  position: relative;
+  list-style: none;
+  background: var(--info-bubble);
+  color: var(--bg-mainObject);
+}
+
+.cmd {
+  cursor: text;
+  height: 8px;
+  width: auto;
+  margin: 5px 10px;
+  padding: 1.5px 16px;
+  border-radius: 3px 3px;
+  align-items: center;
+  position: relative;
+  list-style: none;
+  background: var(--codeSpace);
+  color: var(--codeSpaceText);
+}
+
+.center {
+  color: gray;
+}
+
+.codeSpace {
+  cursor: text;
+  height: 8px;
+  width: auto;
+  margin: 5px 10px;
+  padding: 1.5px 16px;
+  border-radius: 3px 3px;
+  position: relative;
+  list-style: none;
+  background: var(--codeSpace);
+  color: var(--codeSpaceText);
+}

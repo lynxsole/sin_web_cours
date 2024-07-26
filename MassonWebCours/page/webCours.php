@@ -43,14 +43,14 @@ foreach ($results as $results) {
     <?php include "../components/navWebCours.php"; ?>
   </header>
 
-  <section class="h-screen my-1 bloc flex-col items-start justify-start">
+  <section class="h-screen my-1 bloc items-start justify-start">
       <div class="mx-1 md:mx-32 md:my-32">
         <a href="../courses.php" class="flex items-center">
             <span class="font-semibold hover:border-b-2 hover:border-black ease-in">Revenir en arriere</span>
         </a>
       </div>
-    <div class="container mx-1 md:mx-32 md:my-32 md:text-start">
-        <p>
+    <div class="mx-1 md:mx-32 md:my-32 md:text-start">
+        <p id="sujet">
           <?php echo $results['courses_sujet']; ?>
         </p>
     </div>
@@ -59,7 +59,7 @@ foreach ($results as $results) {
   <footer class="w-full h-16 border-t-2 flex inset-x-0 bottom-0 text-black bg-white shadow-xl fixed z-20 items-center justify-between">
     <?php include "../components/footer.php"; ?>
   </footer>
-
+  <script src="../src/js/main.js"></script>
   <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/tailspin.js"></script>
 </body>
 </html>
