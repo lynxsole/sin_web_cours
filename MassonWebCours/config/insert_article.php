@@ -15,6 +15,7 @@ if (isset($_POST['article_name'], $_POST['article_desc'], $_POST['article_messag
         $message = htmlspecialchars($_POST['article_message']);
         $categories = htmlspecialchars($_POST['categories_section']);
         $description = htmlspecialchars($_POST['article_desc']);
+        $author =htmlspecialchars($_GET['author']);
 
         try {
             // Pour afficher les erreurs PDO
@@ -24,8 +25,8 @@ if (isset($_POST['article_name'], $_POST['article_desc'], $_POST['article_messag
             $getDB->beginTransaction();
 
             // Assurez-vous que l'ordre des colonnes et des valeurs correspond
-            $q = $getDB->prepare('INSERT INTO article (article_name, article_level, article_time, article_desc, categories_section) VALUES (?, ?, ?, ?, ?)');
-            $q->execute([$name, $level, $readTime, $description, $categories]);
+            $q = $getDB->prepare('INSERT INTO article (article_name, article_level, article_time, article_desc, categories_section, author) VALUES (?, ?, ?, ?, ?)');
+            $q->execute([$name, $level, $readTime, $description, $categories, $author]);
 
             // Récupérer l'ID de l'article nouvellement inséré
             $articleId = $getDB->lastInsertId();
@@ -40,7 +41,7 @@ if (isset($_POST['article_name'], $_POST['article_desc'], $_POST['article_messag
 
             // Log de succès
             error_log("Insertion réussie : article_id=$articleId", 3, '../log/success.log');
-            header('Location: ../page/dashboard.php?success=article_added');
+            header('Location: ../page/dashboard.php?session'.$_SESSION['formateur_id'].'&add=article_added');
             exit();
         } catch (PDOException $e) {
             // Annuler la transaction en cas d'erreur
@@ -49,9 +50,11 @@ if (isset($_POST['article_name'], $_POST['article_desc'], $_POST['article_messag
             errorMsg('Erreur de base de données : ' . $e->getMessage());
         }
     } else {
+        error_log("Erreur de base de données : " . $e->getMessage(), 3, '../log/errors.log');
         errorMsg('Tous les champs sont requis.');
     }
 } else {
+    error_log("Erreur de base de données : " . $e->getMessage(), 3, '../log/errors.log');
     errorMsg('Données de formulaire non reçues.');
 }
-?>
+

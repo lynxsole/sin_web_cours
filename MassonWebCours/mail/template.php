@@ -1,9 +1,11 @@
-<!DOCTYPE html>
+<?php
+
+ $mail_template = '<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="../dist/output.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
@@ -27,33 +29,30 @@
         </p>
 
         <p class="mt-2 leading-loose text-gray-600"">
-          Mail : 
+          Mail : '.$user_Mail.'
         </p>
 
         <p class="mt-2 leading-loose text-gray-600"">
-          Password : 
+          Password : '.$hashedPassword = null.'
         </p>
 
         <p class="mt-2 leading-loose text-gray-600"">
           please do not disclose this to anyone
         </p>
         
-        
         <p class="mt-8 text-gray-600">
             Thanks, <br>
             Team Asso_Croizat
         </p>
     </main>
-    
 
     <footer class="mt-8">
-        <p class="text-gray-500 dark:text-gray-400">
-            This email was sent to <a href="#" class="text-blue-600 hover:underline dark:text-blue-400" target="_blank">contact@merakiui.com</a>. 
-            If you'd rather not receive this kind of email, you can <a href="#" class="text-blue-600 hover:underline dark:text-blue-400">unsubscribe</a> or <a href="#" class="text-blue-600 hover:underline dark:text-blue-400">manage your email preferences</a>.
-        </p>
-
         <p class="mt-3 text-gray-500 dark:text-gray-400">© 2024 Asso_Croizat, Inc. All rights reserved.</p>
     </footer>
 </section>
 </body>
-</html>
+</html>';
+
+
+
+

@@ -12,7 +12,7 @@
     <?php include "components/nav.php"; ?>
   </header>
 
-  <section class="h-screen flex items-start justify-start pt-20 max-xl:block">
+  <section class="w-full h-screen flex items-start justify-start pt-20 max-xl:block">
     <div class="py-5 px-2 w-full">
       <div class="mx-16 my-32 md:mx-32 md:my-32 ">
         <h2 class="font-bold text-3xl max-xl:text-base">Cours en libre accès</h2>
@@ -21,7 +21,13 @@
         <?php include "components/courses_block.php"; ?>
       </div>
     </div>
+      
+    <div class="">
+      <!-- <?php include "components/pagination.php"; ?> -->
+    </div>
   </section>
+
+
 
   <footer class="w-full h-16 border-t-2 flex inset-x-0 bottom-0 font-medium text-black bg-white shadow-xl fixed z-20 items-center justify-between">
     <?php include "components/footer.php"; ?>

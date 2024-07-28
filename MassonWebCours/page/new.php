@@ -34,13 +34,19 @@
       </header>
        
 <section class="h-screen block items-start justify-start pt-20 max-xl:block">
+        <div class="mx-16 md:mx-16 md:my-16">
+            <a href="dashboard.php?session=<?php echo $_SESSION['formateur_id'] ?>" class="flex items-center">
+                <span class="font-semibold hover:border-b-2 hover:border-black ease-in">Revenir en arriere</span>
+            </a>
+        </div>
         <form class="h-screen block" action="..\config\insert_article.php" method="post">
         <div class="flex w-full items-center justify-center">
             
         </div>
               
-        <div class="py-5 px-2 w-full">
+        <div class="py-2 px-2 w-full">
           <div class="mx-16 my-8 md:my-8 ">
+            <input type="hidden" name="session_author">
             <div>
                 <label for="default-input" class="block mb-2 text-sm font-medium text-gray-900">Titre de l'article</label>
                 <input type="text" id="default-input" name="article_name" placeholder="Titre" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:focus:ring-blue-500 dark:focus:border-blue-500">

@@ -4,7 +4,7 @@
     $p = "get";
 
     if ($_SESSION) {
-        header('Location: dashboard.php?session=true');
+        header('Location: dashboard.php?session='. $_SESSION['formateur_id']);
     }
 ?>
 

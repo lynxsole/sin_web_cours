@@ -33,7 +33,7 @@ if (isset($_POST['mail']) && isset($_POST['pass'])) {
                         $_SESSION['formateur_id'] = $load_user['formateur_id']; // Assurez-vous que 'formateur_id' est correct
                         $_SESSION['name'] = $load_user['formateur_name'];
 
-                        header('Location: ../page/dashboard.php?user=' . urlencode($_SESSION['formateur_id']));
+                        header('Location: ../page/dashboard.php?session=' . urlencode($_SESSION['formateur_id']));
                         exit();
                     } else {
                         echo "Mot de passe incorrect.";
