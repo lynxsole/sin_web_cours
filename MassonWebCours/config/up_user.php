@@ -37,7 +37,7 @@ if (isset($_POST['formateur_name'], $_POST['formateur_mail'], $_POST['formateur_
 
                     if ($insertUser->rowCount() > 0) {
                         // Envoi de l'email de bienvenue
-                        new_Mail($mail);
+                        new_Mail($mail, $hashedPassword);
 
                         // Logging success
                         error_log("Insertion réussie pour l'utilisateur $mail", 3, '../log/success.log');

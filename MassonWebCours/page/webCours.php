@@ -45,7 +45,7 @@ foreach ($results as $results) {
 
   <section class="h-screen my-1 bloc items-start justify-start">
       <div class="mx-1 md:mx-32 md:my-32">
-        <a href="../courses.php" class="flex items-center">
+        <a href="../courses.php?categories=All" class="flex items-center">
             <span class="font-semibold hover:border-b-2 hover:border-black ease-in">Revenir en arriere</span>
         </a>
       </div>

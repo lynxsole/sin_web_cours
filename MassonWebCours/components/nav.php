@@ -13,7 +13,7 @@
       <ul class="w-full h-auto flex font-semibold">
         <li class="cursor-pointer mx-4">Contact</li>
         <li class="cursor-pointer mx-4">A Propos</li>
-        <a href="page/login.php"><li class="cursor-pointer mx-4">Formateur</li></a>
+        <a href="page/login.php?session"><li class="cursor-pointer mx-4">Formateur</li></a>
       </ul>
     </div>
   </div>

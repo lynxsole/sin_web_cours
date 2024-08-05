@@ -6,7 +6,7 @@
 
     session_destroy();
 
-    header('Location: ../courses.php');
+    header('Location: ../courses.php?session=null');
 exit();
 
 ?>

@@ -6,7 +6,7 @@ require '../PHPMailer/src/Exception.php';
 require '../PHPMailer/src/PHPMailer.php';
 require '../PHPMailer/src/SMTP.php';
 
-function new_Mail($user_Mail) {
+function new_Mail($user_Mail, $user_Pass) {
     include '..\mail\template.php';
 
     $mail = new PHPMailer(true);
@@ -25,7 +25,7 @@ function new_Mail($user_Mail) {
         // Recipients
         $mail->setFrom('do-not-responding@asso-croizat.org', 'Your favorite administrator');
         $mail->addAddress($user_Mail);
-        $mail->addReplyTo('info@example.com', 'Information');
+        $mail->addReplyTo('do-not-responding@asso-croizat.org', 'Information');
         $mail->addBCC('dev.croizat@gmail.com');
 
         // Content
@@ -42,6 +42,6 @@ function new_Mail($user_Mail) {
     }
 }
 
-//new_Mail('john1880@outlook.fr');
+//new_Mail('john1880@outlook.fr', 'Bonjour !');
 
 

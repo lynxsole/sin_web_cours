@@ -1,0 +1,32 @@
+
+# Interdire l'accès aux répertoires sensibles
+RewriteEngine off
+
+# Interdire l'accès au répertoire mail
+RewriteRule ^mail/ - [F,L]
+
+# Interdire l'accès au répertoire config
+RewriteRule ^config/ - [F,L]
+
+# Interdire l'accès au répertoire log
+RewriteRule ^log/ - [F,L]
+
+# Interdire l'accès au répertoire src
+RewriteRule ^src/ - [F,L]
+
+# Interdire l'accès au répertoire phpmailer
+RewriteRule ^phpmailer/ - [F,L]
+
+# Interdire l'accès au répertoire components
+RewriteRule ^components/ - [F,L]
+
+# Interdire l'accès au répertoire db
+RewriteRule ^db/ - [F,L]
+
+# Interdire l'accès au répertoire dist
+RewriteRule ^dist/ - [F,L]
+
+# Interdire l'accès au répertoire node_modules
+RewriteRule ^node_modules/ - [F,L]
+
+

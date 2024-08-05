@@ -33,7 +33,7 @@
         </p>
 
         <p class="mt-2 leading-loose text-gray-600"">
-          Password : '.$hashedPassword = null.'
+          Password : '.$user_Pass.'
         </p>
 
         <p class="mt-2 leading-loose text-gray-600"">
